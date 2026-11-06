@@ -1,0 +1,246 @@
+{
+  "archive-2025-poster": {
+    "source_filename": "nsty-ig-01-DL3a1nkodkW.jpg",
+    "source_sha256": "8b4079b4a01800f9641ecb27c1792a7553febb63d08b56eb2db548592aa42be3",
+    "source_pixels": [
+      1440,
+      1800
+    ],
+    "derivatives": [
+      {
+        "width": 480,
+        "height": 600,
+        "jpg": "/test/assets/media/archive-2025-poster-480.jpg",
+        "webp": "/test/assets/media/archive-2025-poster-480.webp",
+        "jpg_sha256": "322ea596a5c4dd7a8813f55537532d20f1563ebcd0347adf52ef0a2723b20f62",
+        "webp_sha256": "e628768d62118495fd7e38009a8092c3d05f7b3b763109141810c21479cb4846"
+      },
+      {
+        "width": 800,
+        "height": 1000,
+        "jpg": "/test/assets/media/archive-2025-poster-800.jpg",
+        "webp": "/test/assets/media/archive-2025-poster-800.webp",
+        "jpg_sha256": "d90745e33abe60cbfda286c661ec1d9d03c3fbb95579884c4a2f1c1740cf690e",
+        "webp_sha256": "7e8e87967db683dbc4ffa2ee6d27abde877bc0451a58cf78e7c127f67e2eb6f5"
+      },
+      {
+        "width": 1200,
+        "height": 1500,
+        "jpg": "/test/assets/media/archive-2025-poster-1200.jpg",
+        "webp": "/test/assets/media/archive-2025-poster-1200.webp",
+        "jpg_sha256": "8ad0ecd43a08f4b19d24d8174ba1da3fbbcdcf95f4cb0662941379ad2f86945b",
+        "webp_sha256": "b7e2fd602a47b322b37c04b22b4de31edc39dfbf614cec04c967964fddd5bd93"
+      },
+      {
+        "width": 1440,
+        "height": 1800,
+        "jpg": "/test/assets/media/archive-2025-poster-1440.jpg",
+        "webp": "/test/assets/media/archive-2025-poster-1440.webp",
+        "jpg_sha256": "16c222a456dba0ad504b3162b531652b14330cb30c1e449eab81a99bb205e5a1",
+        "webp_sha256": "50109fa8f18a427a83d731067e471716578cfb81d5fbced1ecad9f8eda330198"
+      }
+    ]
+  },
+  "outdoor-latex": {
+    "source_filename": "collab-02-rayn.nyx-DNL0neeiqpj.jpg",
+    "source_sha256": "61d9e2036f450fe1b935bcacf94b50ebdbdcc23386cf990fe008d53eae1f1fcd",
+    "source_pixels": [
+      1440,
+      1920
+    ],
+    "derivatives": [
+      {
+        "width": 480,
+        "height": 640,
+        "jpg": "/test/assets/media/outdoor-latex-480.jpg",
+        "webp": "/test/assets/media/outdoor-latex-480.webp",
+        "jpg_sha256": "1b6acf0c16f882790ba874cea42d1b8ca322fc0fae703d62236082a55cd098de",
+        "webp_sha256": "fb730411e0cb5b8f23c10b6bb5f229f8e504c70f9fb156439d3a95676ce8e068"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "jpg": "/test/assets/media/outdoor-latex-800.jpg",
+        "webp": "/test/assets/media/outdoor-latex-800.webp",
+        "jpg_sha256": "c8b04621ebf4a0f753a5eea19d2eed915d6ffcaecc427a114eb2e98a0f9e585e",
+        "webp_sha256": "4d079368f369554243445d99ab7992e0ea2c2c35154cbb9be256685c4f831acd"
+      },
+      {
+        "width": 1200,
+        "height": 1600,
+        "jpg": "/test/assets/media/outdoor-latex-1200.jpg",
+        "webp": "/test/assets/media/outdoor-latex-1200.webp",
+        "jpg_sha256": "55eecc9f64e1fe746506cf6ffe1ccc3c0e4fc5b1cd91ae063f055a24311ade77",
+        "webp_sha256": "89fe7de655ed0a8e57ba4b698b579f5d2b96f309c39ed5394d72c185615d95ae"
+      },
+      {
+        "width": 1440,
+        "height": 1920,
+        "jpg": "/test/assets/media/outdoor-latex-1440.jpg",
+        "webp": "/test/assets/media/outdoor-latex-1440.webp",
+        "jpg_sha256": "09c80642a6bcebb74ce5e9e6d1f4f5e8595d270eba0d1cd761a96f8fb8c139a3",
+        "webp_sha256": "730e91614788fbdd53ee9e2e855c90fc483c372706a16fdfac2ac1a71b28a0c1"
+      }
+    ]
+  },
+  "backstage-latex": {
+    "source_filename": "collab-03-rayn.nyx-DKttbxziMY8.jpg",
+    "source_sha256": "b33190bc006f44aeffc98b517289ba2719f6d2891d2bda64630056727ab0a47d",
+    "source_pixels": [
+      1440,
+      1800
+    ],
+    "derivatives": [
+      {
+        "width": 480,
+        "height": 600,
+        "jpg": "/test/assets/media/backstage-latex-480.jpg",
+        "webp": "/test/assets/media/backstage-latex-480.webp",
+        "jpg_sha256": "2370d6bab3518ba66e262f15e0c73a6171c331e5ac5580dc7c733f5f0d431120",
+        "webp_sha256": "500e7c59d355b070f1ab518f55b5b1055932b5ff4141b00c480e29580d2f8c82"
+      },
+      {
+        "width": 800,
+        "height": 1000,
+        "jpg": "/test/assets/media/backstage-latex-800.jpg",
+        "webp": "/test/assets/media/backstage-latex-800.webp",
+        "jpg_sha256": "4241aa7ae43bc0a20844d11ee0de720e401ce22387ad6ff7821b994dd583bcc0",
+        "webp_sha256": "dd47b3c49358019f8972e417e60a11ee51f76118bdf567257c3f3c2bbb666372"
+      },
+      {
+        "width": 1200,
+        "height": 1500,
+        "jpg": "/test/assets/media/backstage-latex-1200.jpg",
+        "webp": "/test/assets/media/backstage-latex-1200.webp",
+        "jpg_sha256": "0876af4dd6398df05cf26c3769fdc82f59ca5bb243982dd573f222f1286eb6cb",
+        "webp_sha256": "e5b85e3652026838fbc0ba51cb890cad504f0f22b2304d5b923e3d4bb855c4a9"
+      },
+      {
+        "width": 1440,
+        "height": 1800,
+        "jpg": "/test/assets/media/backstage-latex-1440.jpg",
+        "webp": "/test/assets/media/backstage-latex-1440.webp",
+        "jpg_sha256": "30787092d28333bdb48e8c47da35ce83fbaae15532b9498699971fb191352208",
+        "webp_sha256": "4a7a77e5d70fdeb71fa80b7616f5f4c5cd82f63fb28137292e5101834cf1d9cb"
+      }
+    ]
+  },
+  "monochrome-portrait": {
+    "source_filename": "collab-04-artinblack.m-DYFuuUejBmAj.jpg",
+    "source_sha256": "e694489b7ab9a4b7d4b098a2eca264c617b6acdd8978889e607b8e0232df43b9",
+    "source_pixels": [
+      1170,
+      1560
+    ],
+    "derivatives": [
+      {
+        "width": 480,
+        "height": 640,
+        "jpg": "/test/assets/media/monochrome-portrait-480.jpg",
+        "webp": "/test/assets/media/monochrome-portrait-480.webp",
+        "jpg_sha256": "ec64258ca1b6cfc6db95b225b8debc230869ab61f80e750348b4d6d85add8af3",
+        "webp_sha256": "296ceca426cf7aac49d2c5d01b9cc58270eb5c11cc1ea7de1ce3f0fa68337cef"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "jpg": "/test/assets/media/monochrome-portrait-800.jpg",
+        "webp": "/test/assets/media/monochrome-portrait-800.webp",
+        "jpg_sha256": "e7a34b8bf349c9f712cd94f5363fb84446c349ba376fe8034414aa0e55358b42",
+        "webp_sha256": "6191b227f037f024681736534de26b6368ba8d4084177cdcc7b1d0d85d81b394"
+      },
+      {
+        "width": 1170,
+        "height": 1560,
+        "jpg": "/test/assets/media/monochrome-portrait-1170.jpg",
+        "webp": "/test/assets/media/monochrome-portrait-1170.webp",
+        "jpg_sha256": "fab7a0707cb697efa9810ff23dc62ddff36fdd81653ae1a6de8565ed7e1918c7",
+        "webp_sha256": "7d8eaf254a74d265e4543f3225a7583e0a87e2749adb4aca8bac8b60fbdf0fe3"
+      }
+    ]
+  },
+  "runway": {
+    "source_filename": "collab-05-rayn.nyx-DLH8AQbClDA.jpg",
+    "source_sha256": "704abb04ea6f1bc2f7bd7775031af3a1da53b2bd5349fe766b36e26840364f08",
+    "source_pixels": [
+      1440,
+      1800
+    ],
+    "derivatives": [
+      {
+        "width": 480,
+        "height": 600,
+        "jpg": "/test/assets/media/runway-480.jpg",
+        "webp": "/test/assets/media/runway-480.webp",
+        "jpg_sha256": "f9c8c16ae3e79ccecf8f4ba4af4effedbe525165d2844b59be95871449720f6f",
+        "webp_sha256": "1ba820fb0ea3716bb20acc9eacc36c4c58ad8c0c9e4fbce85d5fe8624ac79852"
+      },
+      {
+        "width": 800,
+        "height": 1000,
+        "jpg": "/test/assets/media/runway-800.jpg",
+        "webp": "/test/assets/media/runway-800.webp",
+        "jpg_sha256": "3c4af96d588911672e51b48da1cefcd653d67f8e7ddca2941e82f5fd336f58aa",
+        "webp_sha256": "886f962191a1cff82e0394ae9e0471c459bc07a3b3a452858b2e650c70356751"
+      },
+      {
+        "width": 1200,
+        "height": 1500,
+        "jpg": "/test/assets/media/runway-1200.jpg",
+        "webp": "/test/assets/media/runway-1200.webp",
+        "jpg_sha256": "289ba79816bfadeb1065c534bd67c987bbb2549742e27de8eb9a1ba9ca0b6222",
+        "webp_sha256": "4a094d0283a804bab041bfd0fc2a2b0b2f09a9de66c253c38ce1ea9c58bcdac9"
+      },
+      {
+        "width": 1440,
+        "height": 1800,
+        "jpg": "/test/assets/media/runway-1440.jpg",
+        "webp": "/test/assets/media/runway-1440.webp",
+        "jpg_sha256": "7fdfdf923039935857706527e85484976ce56b2f5c0733cd31a2abbca58be0c6",
+        "webp_sha256": "78a5435e975ad939908bfee4895d24391bc3f21b81ddc1093ae71ce24f95f9c3"
+      }
+    ]
+  },
+  "white-latex": {
+    "source_filename": "collab-06-mew_chiel-DLDT0Bos2FG.jpg",
+    "source_sha256": "a5e8dc26c6edc406154064c3de10a4820a11362111483d4421ef62de215858aa",
+    "source_pixels": [
+      1440,
+      1800
+    ],
+    "derivatives": [
+      {
+        "width": 480,
+        "height": 600,
+        "jpg": "/test/assets/media/white-latex-480.jpg",
+        "webp": "/test/assets/media/white-latex-480.webp",
+        "jpg_sha256": "1c746917223d463164bfac21a9a913bd9a79c08fd9e1abe91fd26daf0e3c6334",
+        "webp_sha256": "cfe3adcf301a2348d685b8126439babad3da2ccee71faa7af977a53b6139c24c"
+      },
+      {
+        "width": 800,
+        "height": 1000,
+        "jpg": "/test/assets/media/white-latex-800.jpg",
+        "webp": "/test/assets/media/white-latex-800.webp",
+        "jpg_sha256": "de574f12f1ef081057b771c032863e0089cd92ddba4a5ec4f90a9dcf6162989f",
+        "webp_sha256": "d695deeba957f07a95d67715ac292163afe93fa58d4d0d05bb944a872a71e6e0"
+      },
+      {
+        "width": 1200,
+        "height": 1500,
+        "jpg": "/test/assets/media/white-latex-1200.jpg",
+        "webp": "/test/assets/media/white-latex-1200.webp",
+        "jpg_sha256": "9250a8a5f0292d48273999b6801d83a99d134eb3a4548f3cbe696a0e01420490",
+        "webp_sha256": "d4420059d9984038cc40b3ae6f993315cd247b810c4be43f7b7ad6b82a9c9676"
+      },
+      {
+        "width": 1440,
+        "height": 1800,
+        "jpg": "/test/assets/media/white-latex-1440.jpg",
+        "webp": "/test/assets/media/white-latex-1440.webp",
+        "jpg_sha256": "1446d0b6b5c1438bc8e1b91ae7c917d3d906a4c836ef5d5e5986da2e93dceb57",
+        "webp_sha256": "1a68dd03c580a7f070e141748e7248127f80d0996707314e9e02b47d5d62183d"
+      }
+    ]
+  }
+}
