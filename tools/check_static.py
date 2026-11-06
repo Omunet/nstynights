@@ -203,7 +203,13 @@ def main():
     home = (DEPLOY / "test/index.html").read_text(encoding="utf-8")
     if "archive-2025-poster" in home:
         errors.append("archive poster is on the home page")
-    media = DERIV_EXISTS = (ROOT / "sources/media/derivatives.json").is_file()
+    audit_phrases = ("frame stays empty", "verified public", "One verified", "not readable in this build")
+    for path in pages:
+        raw = path.read_text(encoding="utf-8")
+        for phrase in audit_phrases:
+            if phrase in raw:
+                errors.append(f"audit phrase {phrase!r} in {page_url(path)}")
+    media = (ROOT / "sources/media/derivatives.json").is_file()
     if media:
         for slug in ("runway", "outdoor-latex", "backstage-latex", "monochrome-portrait"):
             if slug not in home:
@@ -218,7 +224,7 @@ def main():
         if photos.count("<img ") < 5:
             errors.append("photos page has fewer than 5 images")
     else:
-        notes.append("MEDIA_GAP: authorised image files were not readable; pages contain no substitute images")
+        errors.append("derivatives.json missing; photographs were not built")
 
     print(f"pages {len(pages)}")
     for note in notes:

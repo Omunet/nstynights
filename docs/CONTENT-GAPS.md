@@ -4,8 +4,8 @@ These are unpublished or unapproved. The preview says so on the pages. None of t
 
 | Topic | Status |
 | --- | --- |
-| Wordmark fidelity | Geometric reconstruction only. Needs review against a high-resolution NSTY-only trace. Upper line of the source mark is omitted. |
-| Account photographs | Six authorised files were named and not readable in this workspace. Pipeline is in `tools/optimize_media.py`. Do not paint out watermarks or event marks. |
+| Wordmark fidelity | Traced from the 150×150 profile JPEG. Upper line removed. Corners are limited by that source size. |
+| Account photographs | Six authorised files are in the preview. Do not paint out watermarks or event marks. |
 | 2025 poster | When the file is present, archive only. Printed lines: 31.05.2025 German Fetish Ball, Berlin; 04.07.2025 BERLINA, Imperial Club, Barcelona; 12.07.2025 DeSade Festival, Barcelona; 27.09.2025 Manifest, Copenhagen. Not a future schedule and not a claim that NSTY nights organised those events. |
 | Dates, venue, lineup | Not published |
 | Tickets and mixes | Not published. No seller URL. |

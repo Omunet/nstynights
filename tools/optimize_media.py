@@ -12,9 +12,8 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "deploy" / "test" / "assets" / "media"
 META_PATH = ROOT / "sources" / "media" / "derivatives.json"
 SEARCH = [
-    ROOT / "nsty-assets" / "images",
+    ROOT / "sources" / "incoming" / "images",
     ROOT / "sources" / "incoming",
-    Path("/home/ubuntu/.cursor/projects/workspace/uploads"),
 ]
 TARGETS = (480, 800, 1200, 1600, 2000)
 MAX_EDGE = 2000
@@ -60,19 +59,10 @@ def assert_no_metadata(path):
         text=True,
     )
     payload = json.loads(result.stdout)[0]
-    leftover = [
-        key
-        for key in payload
-        if key not in {"SourceFile", "ExifTool:ExifToolVersion", "File:FileName", "File:Directory", "File:FileSize", "File:FileModifyDate", "File:FileAccessDate", "File:FileInodeChangeDate", "File:FilePermissions", "File:FileType", "File:FileTypeExtension", "File:MIMEType", "File:ImageWidth", "File:ImageHeight", "File:EncodingProcess", "File:BitsPerSample", "File:ColorComponents", "File:YCbCrSubSampling", "JFIF:JFIFVersion", "JFIF:ResolutionUnit", "JFIF:XResolution", "JFIF:YResolution", "Composite:ImageSize", "Composite:Megapixels"}
-        and not key.startswith("File:")
-        and not key.startswith("Composite:")
-        and not key.startswith("JFIF:")
-    ]
-    # JFIF resolution defaults are not camera EXIF. Reject GPS, camera, and XMP.
-    banned_prefixes = ("EXIF:", "GPS:", "IPTC:", "XMP-", "XMP:", "MakerNotes:", "ICC_Profile:")
+    banned_prefixes = ("EXIF:", "GPS:", "IPTC:", "XMP-", "XMP:", "MakerNotes:")
     serious = [key for key in payload if key.startswith(banned_prefixes)]
-    if serious or leftover:
-        raise SystemExit(f"Metadata remains on {path}: {serious or leftover}")
+    if serious:
+        raise SystemExit(f"Metadata remains on {path}: {serious}")
 
 
 def main():

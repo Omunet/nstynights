@@ -1,45 +1,37 @@
 # Provenance and source audit
 
-Built 2026-11-06. No Kinyxx media, copy, marks, ticket platforms, or social links are in `deploy/`.
+Sources were read from the supplied archive `nsty-authorised-media.zip`. Dimensions and SHA-256 were taken from those files before any resize.
+
+| Archive path | Pixels | Bytes | SHA-256 |
+| --- | --- | --- | --- |
+| `logo/lx-nsty-profile-1.jpg` | 150×150 | 4169 | `e294e2e31611551b0bdf726d4b9b92440f86e26c03c2b11074d0d5d31d98953c` |
+| `images/nsty-ig-01-DL3a1nkodkW.jpg` | 1440×1800 | 442986 | `8b4079b4a01800f9641ecb27c1792a7553febb63d08b56eb2db548592aa42be3` |
+| `images/collab-02-rayn.nyx-DNL0neeiqpj.jpg` | 1440×1920 | 271817 | `61d9e2036f450fe1b935bcacf94b50ebdbdcc23386cf990fe008d53eae1f1fcd` |
+| `images/collab-03-rayn.nyx-DKttbxziMY8.jpg` | 1440×1800 | 139327 | `b33190bc006f44aeffc98b517289ba2719f6d2891d2bda64630056727ab0a47d` |
+| `images/collab-04-artinblack.m-DYFuuUejBmAj.jpg` | 1170×1560 | 223633 | `e694489b7ab9a4b7d4b098a2eca264c617b6acdd8978889e607b8e0232df43b9` |
+| `images/collab-05-rayn.nyx-DLH8AQbClDA.jpg` | 1440×1800 | 204489 | `704abb04ea6f1bc2f7bd7775031af3a1da53b2bd5349fe766b36e26840364f08` |
+| `images/collab-06-mew_chiel-DLDT0Bos2FG.jpg` | 1440×1800 | 533787 | `a5e8dc26c6edc406154064c3de10a4820a11362111483d4421ef62de215858aa` |
+
+The profile hash matches the earlier brief. No network fetch was used for these files.
 
 ## Wordmark
 
-- Public mark: `deploy/assets/img/nsty-wordmark.svg` (favicon is the same drawing).
-- It is filled SVG paths plus one shared metal gradient and a drop offset. It is not a font, and it does not embed a JPEG or PNG.
-- The upper line of the account mark is omitted. The file does not spell that upper line.
-- The 150×150 profile JPEG named in the brief (`sha256 e294e2e31611551b0bdf726d4b9b92440f86e26c03c2b11074d0d5d31d98953c`) was not present as a file in this workspace. A public fetch of the Instagram profile returned an error shell, and that fetch was not bypassed.
-- The drawing is therefore a geometric reconstruction of the lower NSTY lettering and the lower chevron, made for review. It is not a pixel-overlay trace. Letter shapes need a human check against a high-resolution source.
-- Close-up for that review: `/opt/cursor/artifacts/nsty-wordmark-closeup.png` and the SVG beside it.
+`deploy/assets/img/nsty-wordmark.svg` is a potrace of the lower NSTY pixels in `logo/lx-nsty-profile-1.jpg`. Rows above that word were dropped, so the upper line is not in the drawing. Paths are filled with a metal gradient. The SVG does not embed a raster and does not use a font.
 
-## Fonts
-
-Self-hosted WOFF2, SIL Open Font License 1.1, downloaded at build time from Fontsource packages and stored in `deploy/test/assets/fonts/`:
-
-| Family | Package | Use |
-| --- | --- | --- |
-| Big Shoulders Display | `@fontsource/big-shoulders-display@5.2.5` | Headings |
-| Barlow Condensed | `@fontsource/barlow-condensed@5.2.5` | Navigation |
-| Outfit | `@fontsource/outfit@5.2.5` | Body |
-
-`OFL.txt` in that directory is the license. The preview does not request a font CDN.
+The same mark is visible, sharper, at the top right of `images/nsty-ig-01-DL3a1nkodkW.jpg`. That plate sits on a photographed background, so the trace uses the clean black profile bitmap. The source crop and the vector are shown together in `/opt/cursor/artifacts/nsty-source-vs-vector.png`. The 150-pixel source limits how tight the corners can be.
 
 ## Photographs
 
-Jonathan (t175u, 2026-11-06) authorised reuse of posts authored or co-authored by `@lx.nsty`. Tagged-only posts stay out. The supplied provenance list was:
+Jonathan (t175u, 2026-11-06) authorised posts authored or co-authored by `@lx.nsty`. Tagged-only posts stay out. Optimised JPEG and WebP live under `deploy/test/assets/media/`. Camera EXIF is stripped. Frames are not cropped in a way that removes printed marks.
 
-| File | Post | Credit / co-authors | Placement |
-| --- | --- | --- | --- |
-| `nsty-ig-01-DL3a1nkodkW.jpg` | `https://www.instagram.com/lx.nsty/p/DL3a1nkodkW/` | Photo credit @nyxianyx. Author lx.nsty. | Dated archive only. Printed 2025 lines are not a future schedule. |
-| `collab-02-rayn.nyx-DNL0neeiqpj.jpg` | `https://www.instagram.com/rayn.nyx/p/DNL0neeiqpj/` | rayn.nyx and lx.nsty | Home, gallery, dress-code draft |
-| `collab-03-rayn.nyx-DKttbxziMY8.jpg` | `https://www.instagram.com/rayn.nyx/p/DKttbxziMY8/` | rayn.nyx, gfbweekend.official, lx.nsty | Home, gallery, dress-code draft |
-| `collab-04-artinblack.m-DYFuuUejBmAj.jpg` | `https://www.instagram.com/artinblack.m/p/DYFuuUejBmAjqEAUXljrRbLfaQ2U82xT4B8oMg0/` | artinblack.m and lx.nsty | Home, gallery, dress-code draft |
-| `collab-05-rayn.nyx-DLH8AQbClDA.jpg` | `https://www.instagram.com/rayn.nyx/p/DLH8AQbClDA/` | rayn.nyx, gfbweekend.official, lx.nsty | Home hero and gallery. Not a future date. |
-| `collab-06-mew_chiel-DLDT0Bos2FG.jpg` | `https://www.instagram.com/mew_chiel/p/DLDT0Bos2FG/` | mew_chiel, aenn_alien, lx.nsty | Gallery and dress-code draft. German Fetish Ball mark stays in frame. This site does not claim that event. |
+| Use | Source | Credit on the page |
+| --- | --- | --- |
+| Home and gallery | 05 runway, 02 outdoor latex, 04 monochrome, 03 backstage | @rayn.nyx or @artinblack.m with @lx.nsty |
+| Gallery and dress | 06 white latex | @mew_chiel with @lx.nsty. The event mark in the frame is not NSTY’s. |
+| Dated archive only | 01 poster | @nyxianyx · @lx.nsty. Printed 2025 lines are past dates, not a coming schedule. |
 
-Those paths were announced for this build (`/workspace/nsty-assets/images/…`) but the bytes were not on disk. Reading them failed. The public post URL returned an Instagram error page (`httpErrorPage`); no undocumented API and no login bypass was used. `tools/optimize_media.py` is ready to strip metadata, resize, and write JPEG and WebP when the files are placed in `nsty-assets/images/` or `sources/incoming/`. Until then the preview shows an empty-frame note and no invented photograph.
+Post URLs from the archive’s `images/PROVENANCE.md` stay in that file. The only outbound link in `deploy/` is `https://www.instagram.com/lx.nsty/`.
 
-Post URLs above are audit records. The only outbound link in `deploy/` is `https://www.instagram.com/lx.nsty/`.
+## Fonts
 
-## Copy
-
-Preview text is original draft wording for NSTY nights. It is labeled as awaiting approval. It does not reuse reference slogans, FAQ answers, or legal identity from any other promoter.
+Self-hosted WOFF2, SIL Open Font License 1.1, from Fontsource 5.2.5: Big Shoulders Display, Barlow Condensed, Outfit. License text is `deploy/test/assets/fonts/OFL.txt`.
