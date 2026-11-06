@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 930 420" role="img" aria-labelledby="title desc">
+  <title id="title">NSTY</title>
+  <desc id="desc">Angular NSTY wordmark. The upper line of the source mark is not included.</desc>
+  <defs>
+    <linearGradient id="metal" gradientUnits="userSpaceOnUse" x1="0" y1="20" x2="40" y2="400">
+      <stop offset="0" stop-color="#f7f8fa"/>
+      <stop offset="0.18" stop-color="#c5ced8"/>
+      <stop offset="0.36" stop-color="#8d98a4"/>
+      <stop offset="0.48" stop-color="#f3f5f7"/>
+      <stop offset="0.62" stop-color="#5d6670"/>
+      <stop offset="0.78" stop-color="#d5dbe2"/>
+      <stop offset="1" stop-color="#9aa3ad"/>
+    </linearGradient>
+    <filter id="plate" x="-8%" y="-8%" width="120%" height="130%">
+      <feOffset dx="0" dy="5" in="SourceAlpha" result="off"/>
+      <feFlood flood-color="#2a3036" result="ink"/>
+      <feComposite in="ink" in2="off" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="url(#metal)" stroke="#121416" stroke-width="3" stroke-linejoin="miter" filter="url(#plate)">
+    <path d="M 48.00 36.00 L 104.00 36.00 L 104.00 256.00 L 48.00 256.00 Z"/>
+    <path d="M 196.00 36.00 L 252.00 36.00 L 252.00 256.00 L 196.00 256.00 Z"/>
+    <path d="M 52.45 58.92 L 200.45 264.92 L 247.55 231.08 L 99.55 25.08 Z"/>
+    <path d="M 286.00 36.00 L 454.00 36.00 L 454.00 92.00 L 286.00 92.00 Z"/>
+    <path d="M 286.00 36.00 L 342.00 36.00 L 342.00 164.00 L 286.00 164.00 Z"/>
+    <path d="M 286.00 118.00 L 454.00 118.00 L 454.00 174.00 L 286.00 174.00 Z"/>
+    <path d="M 398.00 118.00 L 454.00 118.00 L 454.00 256.00 L 398.00 256.00 Z"/>
+    <path d="M 286.00 200.00 L 454.00 200.00 L 454.00 256.00 L 286.00 256.00 Z"/>
+    <path d="M 488.00 36.00 L 664.00 36.00 L 664.00 92.00 L 488.00 92.00 Z"/>
+    <path d="M 547.00 84.00 L 603.00 84.00 L 603.00 256.00 L 547.00 256.00 Z"/>
+    <path d="M 675.88 52.46 L 765.88 162.46 L 806.12 129.54 L 716.12 19.54 Z"/>
+    <path d="M 855.88 19.54 L 765.88 129.54 L 806.12 162.46 L 896.12 52.46 Z"/>
+    <path d="M 758.00 128.00 L 814.00 128.00 L 814.00 256.00 L 758.00 256.00 Z"/>
+    <path d="M 36 286 L 462 378 L 888 286 L 820 286 L 462 344 L 104 286 Z"/>
+  </g>
+</svg>
