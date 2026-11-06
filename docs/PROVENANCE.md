@@ -16,7 +16,7 @@ The profile hash matches the earlier brief. No network fetch was used for these 
 
 ## Wordmark
 
-`deploy/assets/img/nsty-wordmark.svg` is a potrace of the lower NSTY pixels in `logo/lx-nsty-profile-1.jpg`. Rows above that word were dropped, so the upper line is not in the drawing. Paths are filled with a metal gradient. The SVG does not embed a raster and does not use a font.
+`deploy/assets/img/nsty-wordmark.svg` is a potrace of the bright metal contour in the lower NSTY of `logo/lx-nsty-profile-1.jpg`. Dark letter interiors stay open, so the mark is an outline rather than a solid plate. Rows above that word were dropped. A metal gradient colours the contour only. The SVG does not embed a raster and does not use a font. The favicon is the same file.
 
 The same mark is visible, sharper, at the top right of `images/nsty-ig-01-DL3a1nkodkW.jpg`. That plate sits on a photographed background, so the trace uses the clean black profile bitmap. The source crop and the vector are shown together in `/opt/cursor/artifacts/nsty-source-vs-vector.png`. The 150-pixel source limits how tight the corners can be.
 

@@ -16,9 +16,11 @@ CROP = ROOT / "sources" / "logo" / "nsty-lower-crop.jpg"
 def mask_from_profile():
     image = Image.open(SOURCE).convert("L")
     pixels = np.asarray(image)
-    binary = pixels > 40
-    # Row 65 is the first row under the upper word. The tips of N and Y stay.
-    lower = binary[65:, :]
+    # Extent uses a low cutoff so the tips stay in frame. The stroke cutoff
+    # stays high enough that the dark letter interiors remain holes.
+    extent = pixels > 40
+    stroke = pixels > 50
+    lower = extent[65:, :]
     ys, xs = np.where(lower)
     y0, y1 = int(ys.min()), int(ys.max())
     x0, x1 = int(xs.min()), int(xs.max())
@@ -26,7 +28,7 @@ def mask_from_profile():
     color = Image.open(SOURCE).convert("RGB").crop(crop_box)
     CROP.parent.mkdir(parents=True, exist_ok=True)
     color.save(CROP, quality=90)
-    glyph = lower[y0 : y1 + 1, x0 : x1 + 1]
+    glyph = stroke[65 + y0 : 65 + y1 + 1, x0 : x1 + 1]
     pad = 2
     canvas = np.full((glyph.shape[0] + pad * 2, glyph.shape[1] + pad * 2), 255, dtype=np.uint8)
     canvas[pad : pad + glyph.shape[0], pad : pad + glyph.shape[1]] = np.where(glyph, 0, 255)
@@ -42,13 +44,16 @@ def main():
     pbm, width, height = mask_from_profile()
     raw = Path("/tmp/nsty-trace.svg")
     subprocess.check_call(
-        ["potrace", "-s", "--flat", "-t", "2", "-a", "0.9", "-O", "0.6", "-o", str(raw), str(pbm)]
+        ["potrace", "-s", "--flat", "-t", "2", "-a", "0.45", "-O", "0.35", "-o", str(raw), str(pbm)]
     )
     text = raw.read_text(encoding="utf-8")
     start = text.index("<g ")
     end = text.index("</g>") + 4
     group = text[start:end]
-    group = group.replace('fill="#000000"', 'fill="url(#metal)"')
+    group = group.replace(
+        'fill="#000000"',
+        'fill="url(#metal)" fill-rule="evenodd"',
+    )
     svg = f'''<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" role="img">
   <title>NSTY</title>

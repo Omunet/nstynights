@@ -203,7 +203,16 @@ def main():
     home = (DEPLOY / "test/index.html").read_text(encoding="utf-8")
     if "archive-2025-poster" in home:
         errors.append("archive poster is on the home page")
-    audit_phrases = ("frame stays empty", "verified public", "One verified", "not readable in this build")
+    audit_phrases = (
+        "frame stays empty",
+        "verified public",
+        "One verified",
+        "not readable in this build",
+        "German Fetish",
+        "BERLINA",
+        "DeSade",
+        "31.05.2025",
+    )
     for path in pages:
         raw = path.read_text(encoding="utf-8")
         for phrase in audit_phrases:

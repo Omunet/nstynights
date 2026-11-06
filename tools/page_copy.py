@@ -1,14 +1,5 @@
 """Proposed nightlife copy. Drafts, not confirmed door policy."""
 
-ARCHIVE_LINES = """
-<ul class="plain-list stack">
-<li>31.05.2025 — German Fetish Ball, Berlin, DE</li>
-<li>04.07.2025 — BERLINA, Imperial Club, Barcelona, ES</li>
-<li>12.07.2025 — DeSade Festival, Barcelona, ES</li>
-<li>27.09.2025 — Manifest, Copenhagen, DNK</li>
-</ul>
-"""
-
 BODIES = {
     "en": {
         "home": """
@@ -33,9 +24,7 @@ BODIES = {
         "photos": """
 <section class="page-hero"><div class="wrap"><p class="kicker">Looks</p><h1>Photos</h1><p class="lede">Latex, runway, and the hour backstage. The archive at the bottom is a past poster, not the next date.</p></div></section>
 <section class="band"><div class="wrap"><ul class="gallery"><li>{fig:outdoor-latex}</li><li>{fig:backstage-latex}</li><li>{fig:monochrome-portrait}</li><li>{fig:runway}</li><li>{fig:white-latex}</li></ul></div></section>
-<section class="band band-metal" id="archive"><div class="wrap prose"><h2>2025 archive</h2><p>Kept because it already happened. The lines below are what the poster prints. They are not a coming schedule.</p>{fig:archive-2025-poster}<h3>Printed on the poster</h3>"""
-        + ARCHIVE_LINES
-        + """</div></section>
+<section class="band band-metal" id="archive"><div class="wrap prose"><h2>Archive</h2><p>A past poster. Not a coming date.</p>{fig:archive-2025-poster}</div></section>
 """,
         "dress": """
 <section class="page-hero"><div class="wrap"><p class="kicker">Proposed</p><h1>Dress code</h1><p class="lede">A direction, not a rule of entry. Wear the night, or wear black and mean it.</p></div></section>
@@ -84,9 +73,7 @@ BODIES["es"] = {
     "photos": """
 <section class="page-hero"><div class="wrap"><p class="kicker">Imágenes</p><h1>Fotos</h1><p class="lede">Látex, pasarela y la hora del camerino. El archivo de abajo es un cartel pasado, no la próxima fecha.</p></div></section>
 <section class="band"><div class="wrap"><ul class="gallery"><li>{fig:outdoor-latex}</li><li>{fig:backstage-latex}</li><li>{fig:monochrome-portrait}</li><li>{fig:runway}</li><li>{fig:white-latex}</li></ul></div></section>
-<section class="band band-metal" id="archive"><div class="wrap prose"><h2>Archivo 2025</h2><p>Se guarda porque ya ocurrió. Las líneas de abajo son las que imprime el cartel. No son un calendario que viene.</p>{fig:archive-2025-poster}<h3>Impreso en el cartel</h3>"""
-    + ARCHIVE_LINES
-    + """</div></section>
+<section class="band band-metal" id="archive"><div class="wrap prose"><h2>Archivo</h2><p>Un cartel pasado. No es una fecha que viene.</p>{fig:archive-2025-poster}</div></section>
 """,
     "dress": """
 <section class="page-hero"><div class="wrap"><p class="kicker">Propuesta</p><h1>Dress code</h1><p class="lede">Una dirección, no una norma de entrada. Viste la noche, o viste de negro y que se note.</p></div></section>
